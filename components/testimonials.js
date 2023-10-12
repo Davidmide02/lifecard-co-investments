@@ -6,7 +6,7 @@ import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
 
-const Testimonials  = () => {
+const Testimonials = () => {
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
@@ -14,7 +14,8 @@ const Testimonials  = () => {
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+              delectus soluta laborum.
             </p>
 
             <Avatar
@@ -28,7 +29,7 @@ const Testimonials  = () => {
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. laborum.
             </p>
 
             <Avatar
@@ -41,8 +42,8 @@ const Testimonials  = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve seen. I
-              would use this for anything.
+              This is an <Mark>awesome</Mark> Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Ab delectus soluta laborum.
             </p>
 
             <Avatar
@@ -55,7 +56,7 @@ const Testimonials  = () => {
       </div>
     </Container>
   );
-}
+};
 
 function Avatar(props) {
   return (

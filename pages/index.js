@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
+import { benefitOne, benefitThree, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
@@ -16,43 +16,49 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
-        <meta
-          name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
-        />
+        <title>Lifecard Co-investment</title>
+        <meta name="description" content="Lifecard Co-investment" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
+        pretitle="Why Choose Co-Investment?"
+        title="Why you should choose Co-Investment...additional?"
+      >
+        {/* Nextly is a free landing page & marketing website template for startups
         and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        completely open-source. */}
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+      {/* <Video /> */}
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        pretitle="Benefits"
+        title="Why Choose Lifecard Co-Investment"
+      ></SectionTitle>
+      <Benefits data={benefitThree} />
+      {/* call to action */}
+      <SectionTitle pretitle="Ready to Co-Invest?" title="Join us!">
+        Join Lifecard Co-Investment today and start unlocking the potential of
+        real estate together.
+        {/* <div className="p-4">
+          <button className="bg-zinc-50 p-2 text-purple-200 rounded-md">
+            Sign Up
+          </button>
+        </div> */}
+        {/* link form here */}
+        <Cta />
       </SectionTitle>
-      <Video />
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+      <SectionTitle pretitle="Testimonials" title="What Our Investors Say">
+        {/* Testimonails is a great way to increase the brand trust and awareness.
+        Use this section to highlight your popular customers. */}
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+        Got questions? We've got answers. Explore our FAQ section for more
+        information about co-investment with Lifecard.
       </SectionTitle>
       <Faq />
       <Cta />
@@ -60,6 +66,6 @@ const Home = () => {
       <PopupWidget />
     </>
   );
-}
+};
 
 export default Home;
