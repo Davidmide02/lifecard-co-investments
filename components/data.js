@@ -8,7 +8,8 @@ import {
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../public/img/life2.jpg";
-import benefitTwoImg from "../public/img/benefit-two.png";
+import benefitTwoImg from "../public/img/life3.jpg";
+import benefitThreeImg from "../public/img/life4.jpg";
 
 const benefitOne = {
   title: "",
@@ -87,7 +88,7 @@ const benefitTwo = {
 const benefitThree = {
   title: "",
   desc: "",
-  image: benefitOneImg,
+  image: benefitThreeImg,
   bullets: [
     {
       title: "Expert Curation",
